@@ -1,0 +1,29 @@
+
+
+
+html
+{
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+
+}
+
+body
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: $bodyFont;
+    color: $darkGrayishBlue;
+    line-height: 1.3;
+}
+
+h1, h2, h3
+{
+    margin-top: 0;
+}
