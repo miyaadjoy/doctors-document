@@ -1,0 +1,42 @@
+.header 
+{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    &__hmenu
+    {
+        > span
+        {
+            display: block;
+            width: 1.625rem;
+            height: 3px;
+            background-color: $darkGrayishBlue;
+            &:not(:last-child)
+            {
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+
+    &__doctor
+    {
+        text-align: center;
+        padding-left: 1rem;
+        p 
+        {
+            font-size: $smallFont;
+        }
+
+    }
+    &__patient
+
+    {
+        text-align: center;
+        padding-left: 1rem;
+        p 
+        {
+            font-size: $smallFont;
+        }
+    }
+}
