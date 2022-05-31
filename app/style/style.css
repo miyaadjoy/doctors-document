@@ -22,5 +22,100 @@ h1, h2, h3 {
   margin-top: 0;
 }
 
-@importan;
+@media (max-width: 63.9375em) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 64em) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 64em) {
+  .container {
+    max-width: 75rem;
+    margin: 0 auto;
+  }
+}
+
+button, .button {
+  display: inline-block;
+  font-size: 1.125rem;
+  color: #ffffff;
+  padding: 0.625rem 2.1875rem;
+  background-color: #45c7c5;
+  font-weight: 400;
+  border: none;
+  border-radius: 50px;
+}
+
+a, a:hover, a:focus, a:active, a:visited {
+  text-decoration: none;
+}
+
+.header {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.header__hmenu > span {
+  display: block;
+  width: 1.625rem;
+  height: 3px;
+  background-color: #9095a7;
+}
+
+.header__hmenu > span:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.header__doctor {
+  text-align: center;
+  padding-left: 1rem;
+}
+
+.header__doctor p {
+  font-size: 0.875rem;
+}
+
+.header__patient {
+  text-align: center;
+  padding-left: 1rem;
+}
+
+.header__patient p {
+  font-size: 0.875rem;
+}
 /*# sourceMappingURL=style.css.map */
