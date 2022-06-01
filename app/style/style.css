@@ -22,6 +22,18 @@ h1, h2, h3 {
   margin-top: 0;
 }
 
+h1 {
+  font-size: 3rem;
+  color: #000000;
+  line-height: 1.15;
+}
+
+@media (max-width: 63.9375em) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
 @media (max-width: 63.9375em) {
   .hide-for-mobile {
     display: none;
@@ -83,6 +95,109 @@ button, .button {
 
 a, a:hover, a:focus, a:active, a:visited {
   text-decoration: none;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.125rem;
+  border: solid 2px #9095a7;
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 2rem;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+input[type="text"]:focus {
+  border: solid 2px #45c7c5;
+}
+
+input[type="tel"] {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.125rem;
+  border: solid 2px #9095a7;
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 2rem;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+input[type="tel"]:focus {
+  border: solid 2px #45c7c5;
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.125rem;
+  border: solid 2px #9095a7;
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 2rem;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+input[type="email"]:focus {
+  border: solid 2px #45c7c5;
+}
+
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.125rem;
+  border: solid 2px #9095a7;
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 2rem;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+input[type="password"]:focus {
+  border: solid 2px #45c7c5;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.125rem;
+  font-size: 1.125rem;
+  color: #ffffff;
+  text-align: center;
+  background-color: #45c7c5;
+  border: solid 2px #45c7c5;
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.signin__heading > h1 {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.signin__form {
+  max-width: 21.875em;
+  margin: 0 auto;
+}
+
+.signup__heading {
+  text-align: center;
+}
+
+.signup__heading > h1 {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.signup__form {
+  max-width: 21.875em;
+  margin: 0 auto;
 }
 
 .header {
