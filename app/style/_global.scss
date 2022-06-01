@@ -25,7 +25,17 @@ h1, h2, h3
     margin-top: 0;
 }
 
+h1
+{
+    font-size: 3rem;
+    color: #000000;
+    line-height: 1.15;
+    @include breakpoint-down(medium)
+    {
+        font-size: 2rem;
+    }
 
+}
 //responsivness
 
 //hide for mobile and tablet
@@ -103,4 +113,109 @@ button, .button
 a, a:hover, a:focus, a:active, a:visited
 {
     text-decoration: none;
+}
+
+
+// form
+
+input[type="text"]
+{
+    width: 100%;
+    padding: 15px;
+    font-size:$bodyFont;
+    
+    border: solid 2px $darkGrayishBlue;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 2rem;
+
+    transition: all 200ms ease-in-out ;
+
+    &:focus
+    {
+        border: solid 2px $skyBlue;
+    }
+
+
+}
+input[type="tel"]
+{
+    width: 100%;
+    padding: 15px;
+    font-size:$bodyFont;
+    
+    border: solid 2px $darkGrayishBlue;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 2rem;
+
+    transition: all 200ms ease-in-out ;
+
+    &:focus
+    {
+        border: solid 2px $skyBlue;
+    }
+
+
+}
+
+
+
+input[type="email"]
+{
+    width: 100%;
+    padding: 15px;
+    font-size:$bodyFont;
+    
+    border: solid 2px $darkGrayishBlue;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 2rem;
+
+    transition: all 200ms ease-in-out ;
+
+    &:focus
+    {
+        border: solid 2px $skyBlue;
+    }
+
+
+}
+
+input[type="password" ]
+{
+    width: 100%;
+    padding: 15px;
+    font-size:$bodyFont;
+    
+    border: solid 2px $darkGrayishBlue;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 2rem;
+
+    transition: all 200ms ease-in-out ;
+
+    &:focus
+    {
+        border: solid 2px $skyBlue;
+    }
+
+
+}
+
+input[type="submit"]
+{
+    width: 100%;
+    padding: 15px;
+    font-size:$bodyFont;
+    font-size: $bodyFont;
+    color: $white;
+    text-align: center;
+    background-color: $skyBlue;
+    border: solid 2px $skyBlue;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    
 }
