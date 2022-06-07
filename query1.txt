@@ -1,0 +1,7 @@
+CREATE TABLE signup (
+    doctors_name varchar(255),
+     doctors_email varchar(255),
+    doctors_phone varchar(255),
+     doctors_password varchar(255)
+     
+);

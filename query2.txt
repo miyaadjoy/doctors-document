@@ -1,0 +1,18 @@
+
+
+
+CREATE TABLE patientssignup (
+    patients_name varchar(255),
+    patients_email varchar(255),
+    patients_phone varchar(255),
+    patients_age varchar(255),
+    patients_gender varchar(255),
+    patients_address varchar(255),
+    patients_height varchar(255),
+    patients_weight varchar(255),
+    patients_password varchar(255)
+
+
+     
+     
+);
