@@ -1,7 +1,10 @@
 .header 
 {
+    position: relative;
     margin-top: 2rem;
     margin-bottom: 2rem;
+
+    
 
     &__hmenu
     {
@@ -18,25 +21,75 @@
         }
     }
 
-
-    &__doctor
+    &__signin
     {
-        text-align: center;
-        padding-left: 1rem;
-        p 
+        position: relative;
+        &:hover 
         {
-            font-size: $smallFont;
+            .header__dropdown
+            {
+                display: block;
+            }
+
+        }
+    }
+
+    &__dropdown
+    {
+        display: none;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.05);
+        width: 100%;
+        // top: 50px;
+        padding-top: 1rem;
+        padding-left: 10%;
+        z-index: 1;
+
+        a 
+        {
+            display: inline-block;
+            font-size: 1rem;
+            
+            
+            margin-bottom: 0.875rem;
+        
+            
+        }
+    }
+
+    &__mmenu
+    {
+        position: absolute;
+        visibility: hidden;
+        background-color: rgba(0, 0, 0, 0.1);
+        width: calc(100% - 48px);
+        margin: 0 auto;
+        
+        padding: 2rem;
+        border-radius: 10px;
+
+        &.visible
+        {
+            visibility: visible;
+        }
+        a 
+        {
+            display: inline-block;
+        }
+
+        a:not(:last-child)
+        {
+            margin-bottom: 1rem;
         }
 
     }
-    &__patient
 
-    {
-        text-align: center;
-        padding-left: 1rem;
-        p 
-        {
-            font-size: $smallFont;
-        }
-    }
+
+    
+
+
+    
+    
+    
+    
 }

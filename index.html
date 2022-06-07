@@ -21,28 +21,46 @@
                 <img src="images/logo.svg" alt="doctors document">
             </a>
             <div class="header__links hide-for-mobile">
-                <div class="header__signup flex flex-ai-c flex-jc-sb">
-                    <div class="header__doctor">
-                        
-                        <a class="button" href="signin/doctors-signin.html">sign in</a>
-                        <p>as a doctor</p>
-    
+                <div class="header__signin">
+
+                    <a class="button" href="#">sign in</a>
+
+                    <div class="header__dropdown">
+                        <a href="signin/doctors-signin.php">as a doctor</a><br>
+                        <a href="signin/patients-signin.php">as a patients</a>
                     </div>
-                    <div class="header__patient">
-                        
-                        <a class="button" href="signin/patients-signin.html">sign in</a>
-                        <p>as a patient</p>
-    
-                    </div>
+
+
+
+
+
+
+
+
+                    
+
+                    
+                    
 
                 </div>
             </div>
-            <div class="header__hmenu hide-for-desktop">
+            <div id="toggleButton" class="header__hmenu hide-for-desktop">
                 <span></span><span></span><span></span>
             </div>
+
+            
+
+            </div>
         </nav>
+        <div class="header__mmenu hide-for-desktop">
+            <a href="signin/doctors-signin.php">signin as a doctor</a><br>
+            <a href="signin/patients-signin.php">signin as a patients</a>
 
     </header>
     
+
+
+
+    <script src="app/js/script.js"></script>
 </body>
 </html>

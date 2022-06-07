@@ -219,3 +219,24 @@ input[type="submit"]
     cursor: pointer;
     
 }
+
+textarea
+{
+    width: 100%;
+    padding: 15px;
+    font-size:$bodyFont;
+    
+    border: solid 2px $darkGrayishBlue;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 2rem;
+    resize: none;
+
+    transition: all 200ms ease-in-out ;
+
+    &:focus
+    {
+        border: solid 2px $skyBlue;
+    }
+
+}

@@ -176,8 +176,26 @@ input[type="submit"] {
   cursor: pointer;
 }
 
+textarea {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.125rem;
+  border: solid 2px #9095a7;
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 2rem;
+  resize: none;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+textarea:focus {
+  border: solid 2px #45c7c5;
+}
+
 .signin__heading > h1 {
   text-align: center;
+  margin-top: 3rem;
   margin-bottom: 5rem;
 }
 
@@ -192,6 +210,7 @@ input[type="submit"] {
 
 .signup__heading > h1 {
   text-align: center;
+  margin-top: 3rem;
   margin-bottom: 5rem;
 }
 
@@ -200,7 +219,29 @@ input[type="submit"] {
   margin: 0 auto;
 }
 
+.patients-signup__heading {
+  text-align: center;
+}
+
+.patients-signup__heading > h1 {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+
+.patients-signup__form {
+  max-width: 21.875em;
+  margin: 0 auto;
+}
+
+.dashboard__heading {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+
 .header {
+  position: relative;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
@@ -216,21 +257,49 @@ input[type="submit"] {
   margin-bottom: 5px;
 }
 
-.header__doctor {
-  text-align: center;
-  padding-left: 1rem;
+.header__signin {
+  position: relative;
 }
 
-.header__doctor p {
-  font-size: 0.875rem;
+.header__signin:hover .header__dropdown {
+  display: block;
 }
 
-.header__patient {
-  text-align: center;
-  padding-left: 1rem;
+.header__dropdown {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.05);
+  width: 100%;
+  padding-top: 1rem;
+  padding-left: 10%;
+  z-index: 1;
 }
 
-.header__patient p {
-  font-size: 0.875rem;
+.header__dropdown a {
+  display: inline-block;
+  font-size: 1rem;
+  margin-bottom: 0.875rem;
+}
+
+.header__mmenu {
+  position: absolute;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: calc(100% - 48px);
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.header__mmenu.visible {
+  visibility: visible;
+}
+
+.header__mmenu a {
+  display: inline-block;
+}
+
+.header__mmenu a:not(:last-child) {
+  margin-bottom: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
